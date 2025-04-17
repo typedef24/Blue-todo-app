@@ -1,0 +1,213 @@
+
+body {
+    background-color: #f2f7fc;
+    font-family: 'Lato';
+}
+
+.AppContainer {
+    background-color: #f2f7fc;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  @media (min-width: 1200px) {
+    .AppContainer {
+      width: 84%;
+      padding-inline: 8%;
+      padding-block: 8%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .AppContainer {
+      width: 90%;
+      padding-inline: 5%;
+      padding-block: 5%;
+    }
+  }
+  @media (max-width: 768px) {
+    .AppContainer {
+      width: 96%;
+      padding-inline: 2%;
+      padding-block: 2%;
+    }
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .ShadowDiv {
+    background-color: #f2f7fc;
+    box-shadow: 0px 15px 50px rgba(0, 50, 100, 0.2);
+    border-radius: 5px;
+  }
+
+  .appName {
+    color: #1f40e6;
+    font-weight: bolder;
+    text-align : center;
+  }
+  
+  .PanelHead {
+    color: #1f40e6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ModalHead {
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #1f40e6;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-block: 5px;
+    padding-inline: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ModalBody {
+    padding: 20px;
+  }
+  
+  .PanelBody {
+    padding: 20px;
+    padding-top: 0px;
+  }
+  
+  .GoalDiv {
+    padding-block: 10px;
+    padding-top: 5px;
+    padding-inline: 15px;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 20px;
+  }
+  
+  /* .GoalDiv:hover {
+    background-color: white;
+  } */
+
+  .GoalDivider {
+    color: rgb(230, 227, 227);
+    font-size: xx-large;
+  }
+  
+  .GoalTitle {
+    font-weight: bold;
+  }
+  
+  .GoalDescription {
+    font-weight: lighter;
+    color: rgb(79, 75, 75);
+  }
+  
+  .GoalDetails {
+    display: block;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  
+  .ButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+  }
+  
+  .ButtonSm {
+    padding: 0.5em;
+    color: #fff;
+    background: #1f40e6;
+    border: 2px solid #1f40e6;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .ButtonSmProgress {
+    padding: 0.5em;
+    color: #1f40e6;
+    background: #fff;
+    border: 2px solid #1f40e6;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .ButtonSm, .ButtonSmProgress {
+      padding: 0.3em;
+      font-size: 13px;
+    }
+    .PanelHead, .ModalHead {
+      font-size: 20px;
+      padding: 10px;
+    }
+    .GoalDetails {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .ModalBody {
+      padding: 10px;
+    }
+    .PanelBody {
+      padding: 10px;
+      padding-top: 0px;
+      overflow-x: scroll;
+    }
+    .GoalDiv {
+      padding-block: 5px;
+      padding-inline: 10px;
+      margin-top: 10px;
+    }
+  }
+  
+  .SiteInput {
+    padding: 0.8em;
+    background-color: #fff;
+    border: 2px solid #47909d40;
+    border-radius: 5px;
+    font-size: medium;
+    display: block;
+    width: calc(100% - 25px);
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
