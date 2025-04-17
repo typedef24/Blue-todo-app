@@ -43,3 +43,24 @@ When you're done, simply remove the containers by running the following command:
 ```
 docker compose down
 ```
+
+## How to use the app
+- When the app opens on the browser, it displays all your tasks with the newly added and last updated ones at the top (This is to make sure you're closer to the tasks you're most interested in or just created). The task title is in bold followed by the description, an "Update" and a "Delete" button.
+- Clicking "Update" shows a form where you can edit the task details, click the blue "Submit" button when done to save the changes
+- To delete a task, simply click the red "Delete" button associated with the task.
+- To add a new task, click the blue "Add Task" button at the top-right corner, a form will be showed, enter the title and a description for the new task and click the blue "Submit" button to add it.
+Blue Todo is very simple to use and you can use it on your computer, mobile phone, tablet or any device with a web browser.
+
+## How to deploy on Google Cloud Platform
+- Make sure you have GCP CLI (gcloud) installed
+- Create separate Dockerfiles for frontend and backend. e.g Dockerfile.frontend & Dockerfile.backend
+- Build and push the containers to Artifact Registry or Docker Hub.
+- Deploy backend using the following command. IMAGE_URL is the URL you'll get after pushing the container to the registry.
+```
+gcloud run deploy backend --image IMAGE_URL --allow-unauthenticated
+```
+- Deploy frontend using the following command.
+```
+gcloud run deploy client --image IMAGE_URL --allow-unauthenticated
+```
+- Connect the services (Configure the Backend URL in the Frontend). The URL of the backend code needs to be configured in the frontend code so it can access the API. First deploy the backend and get it's Cloud Run URL, then use this URL as an environment variable when building the client code.
